@@ -1,0 +1,23 @@
+{
+    "name": "lebedyncrs/yii2-attrswatcher",
+    "description": "Attributes watcher",
+    "keywords": ["yii2", "attribute wathcer"],
+    "type": "yii2-extension",
+    "license": "BSD-3-Clause",
+    "support": {
+    },
+    "authors": [
+        {
+            "name": "Sergij Lebedyn",
+            "email": "sergij.lebedyn@gmail.com"
+        }
+    ],
+    "require": {
+        "yiisoft/yii2": "*"
+    },
+    "autoload": {
+        "psr-4": {
+            "lebedyncrs\\attrswatcher\\": ""
+        }
+    }
+}
