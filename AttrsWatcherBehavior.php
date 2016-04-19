@@ -1,6 +1,6 @@
 <?php
 
-namespace industi\yii2\crm\components\behaviors;
+namespace lebedyncrs\attrswatcher;
 
 use yii\base\Behavior;
 use yii\db\BaseActiveRecord;
