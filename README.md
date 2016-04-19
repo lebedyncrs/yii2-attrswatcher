@@ -7,13 +7,13 @@ The preferred way to install this extension is through [composer](http://getcomp
 Either run
 
 ```
-php composer.phar require --prefer-dist lebedynrcs/yii2-attrswatcher
+php composer.phar require --prefer-dist lebedyncrs/yii2-attrswatcher
 ```
 
 or add
 
 ```json
-"lebedynrcs/yii2-attrswatcher": "*"
+"lebedyncrs/yii2-attrswatcher": "*"
 ```
 
 to the require section of your composer.json.
