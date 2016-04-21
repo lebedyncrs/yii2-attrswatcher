@@ -38,4 +38,26 @@ public function behavior(){
   ]
 }
 ```
-With this configuration behavior set current timestamp to ```phpClosedOn``` attribute when ```phpStatus``` will be changed from ```phpnull``` to ```php1```
+With this configuration behavior set current timestamp to ```ClosedOn``` attribute when ```Status``` will be changed from ```null``` to ```1```. When ```Rel_DealStage``` will changed then to ```LastStageChange``` will containt current timestamp.
+```php
+public function behavior(){
+  [
+    'class' => AttrsWatcherBehavior::className(),
+    'attributes' => [
+          'Status' => [
+              AttrsWatcherBehavior::ATTRIBUTE => 'ClosedOn',
+              AttrsWatcherBehavior::FROM => null
+              AttrsWatcherBehavior::TO => 1
+            ],
+            'Rel_DealStage' => [
+                   AttrsWatcherBehavior::ATTRIBUTE => 'LastStageChange',
+            ]
+      ],
+      'values' => [
+          'ClosedOn' => 'my own value',
+          'LastStageChange' => 'my own value'
+      ]
+  ]
+}
+```
+As you can see from above example you can set own value for each attribute.
