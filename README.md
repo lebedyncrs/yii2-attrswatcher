@@ -20,7 +20,7 @@ or add
 to the require section of your composer.json.
 Usage
 ------------
-Sometimes you want on chage some attribute save value to another attribute. This extention provide that.
+Sometimes you want on change some attribute set value to another attribute. This extention provide that.
 ```php
 public function behavior(){
   [
