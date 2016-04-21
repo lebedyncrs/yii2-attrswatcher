@@ -38,7 +38,7 @@ public function behavior(){
   ]
 }
 ```
-With this configuration behavior set current timestamp to ```ClosedOn``` attribute when ```Status``` will be changed from ```null``` to ```1```. When ```Rel_DealStage``` will changed then to ```LastStageChange``` will containt current timestamp.
+With this configuration behavior set current timestamp to ```ClosedOn``` attribute when ```Status``` will be changed from ```null``` to ```1```. When ```Rel_DealStage``` will changed ```LastStageChange``` will containt current timestamp.
 ```php
 public function behavior(){
   [
