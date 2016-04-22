@@ -99,6 +99,9 @@ class AttrsWatcherBehavior extends Behavior {
         if (is_array($this->values) && isset($this->values[$attrName])) {
             return $this->values[$attrName];
         }
+        if(is_callable($this->values)) {
+            return call_user_func($this->values);
+        }
         return time();
     }
 
