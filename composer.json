@@ -1,7 +1,7 @@
 {
     "name": "lebedyncrs/yii2-attrswatcher",
     "description": "Sometimes you want on change some attribute set value to another attribute. This extention provide that.",
-    "keywords": ["yii2", "attribute wathcer"],
+    "keywords": ["yii2", "attribute watcher"],
     "type": "yii2-extension",
     "license": "BSD-3-Clause",
     "support": {
