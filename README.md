@@ -21,6 +21,7 @@ to the require section of your composer.json.
 Usage
 ------------
 Sometimes you want on change some attribute set value to another attribute. This extention provide that.
+Attach behavior to model
 ```php
 public function behavior(){
   [
