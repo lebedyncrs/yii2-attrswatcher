@@ -61,4 +61,20 @@ public function behavior(){
   ]
 }
 ```
-As you can see from above example you can set own value for each attribute.
+As you can see from above example you can set own value for each attribute.<br>
+Also you can change default value for all attributes:
+```php
+public function behavior(){
+  [
+    'class' => AttrsWatcherBehavior::className(),
+    'attributes' => [
+          'Status' => [
+              AttrsWatcherBehavior::ATTRIBUTE => 'ClosedOn',
+          ]
+      ],
+      'values' => function(){
+        return time()-100;
+      }
+  ]
+}
+```
