@@ -1,6 +1,6 @@
 <?php
 
-namespace yii2tech\tests\unit\balance;
+namespace lebedyncrs\attrswatcher\tests;
 
 use yii\helpers\ArrayHelper;
 use Yii;
