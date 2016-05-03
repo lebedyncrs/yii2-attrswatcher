@@ -12,6 +12,7 @@
             "email": "sergij.lebedyn@gmail.com"
         }
     ],
+    "minimum-stability": "dev",
     "require": {
         "yiisoft/yii2": "*"
     },
