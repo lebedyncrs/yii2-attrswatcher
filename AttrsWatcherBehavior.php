@@ -70,7 +70,7 @@ class AttrsWatcherBehavior extends Behavior {
             $fromExsistence = isset($this->attributes[$attrName][self::FROM]);
             $toExsistence = isset($this->attributes[$attrName][self::TO]);
             if ($fromExsistence && $toExsistence) {
-                if ($this->attributes[$attrName][self::FROM] === $this->owner->getOldAttribute($attrName) && $this->owner->{$attrName} === $this->attributes[$attrName][self::TO]) {
+                if ($this->attributes[$attrName][self::FROM] == $this->owner->getOldAttribute($attrName) && $this->owner->{$attrName} == $this->attributes[$attrName][self::TO]) {
                     return true;
                 }
                 return false;
@@ -80,7 +80,7 @@ class AttrsWatcherBehavior extends Behavior {
                 }
                 return false;
             } elseif ($toExsistence) {
-                if ($this->attributes[$attrName][self::TO] === $this->owner->{$attrName}) {
+                if ($this->attributes[$attrName][self::TO] == $this->owner->{$attrName}) {
                     return true;
                 }
                 return false;
